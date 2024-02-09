@@ -1,0 +1,46 @@
+.contact{
+    gap: 1rem;
+    justify-content: flex-start;
+    padding: 0.8rem 0;
+    padding-left: 1rem;
+    cursor: pointer;
+    position: relative;
+    .initials{
+        width: 2.4rem;
+        height: 2.4rem;
+        padding: 0.2rem;
+        font-size: 0.9rem;
+        border-radius: 50%;
+        box-shadow: 2px 2px 5px #cecece;
+        font-weight: 600;
+        color: var(--white);
+    }
+}
+
+.contact .fullname{
+    position: relative;
+}
+
+.contact.active-user .fullname::after{
+    display: block;
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    background: #76ff5d;
+    border-radius: 50%;
+    position: absolute;
+    right: -1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 2px 2px 5px #cececec4;
+}
+
+.contact.active-chat{
+    background: var(--white);
+    border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+}
+
+.contact.active-chat:nth-child(1){
+    border-top: 0;
+}

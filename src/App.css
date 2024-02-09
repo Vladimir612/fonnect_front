@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+    --dark: #8781BD;
+    --profile-first: #C63D96;
+    --profile-second: #11C098;
+    --profile-third: #FFCD67;
+    --profile-fourth: #004A7C;
+    --profile-fifth: #F3716D;
+    --white: #fff;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.app-wrapper{
+    background: rgb(220,241,255);
+    background: linear-gradient(90deg, rgba(220,241,255,1) 0%, rgba(255,238,255,1) 100%);
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.flex-center{
+    justify-content: center;
+}
+
+.flex-around{
+    justify-content: space-around;
+}
+
+.flex-between{
+    justify-content: space-between;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+.gap-3 {
+    gap: 3rem;
+}
+
+.gap-4 {
+    gap: 4rem;
+}
+
+.circle{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.auth-form{
+    width: 40rem;
+    max-width: 95%;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px #cecece;
+    background: var(--white);
+    overflow: hidden;
+}
+
+.auth-navigate{
+    box-shadow: 0 2px 5px #cecece;
+    button {
+        padding: 1rem;
+        width: 50%;
+        height: 100%;
+        color: var(--dark);
+    }
+    button.active{
+        background: var(--dark);
+        color: var(--white);
+    }
+}
+
+.pad-1{
+    padding: 1rem;
+}
+
+.pad-2{
+    padding: 2rem;
+}
+
+button{
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.auth-form{
+    form{
+        padding: 3rem 0;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    input{
+        background: none;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid var(--dark);
+        color: #000;
+        font-size: 1.1rem;
+        width: 100%;
+        text-align: center;
+    }
+    .input-group{
+        width: 100%;
+        label{
+            color: var(--dark)
+        };
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    .submit-auth-form{
+        background: var(--dark);
+        color: var(--white);
+        border-radius: 1rem;
+        padding: 0.6rem 4rem;
+        text-align: center;
+        letter-spacing: 1px;
+        margin-top: 1rem;
+    }
+}

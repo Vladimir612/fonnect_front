@@ -1,0 +1,11 @@
+.navigation{
+    background: var(--white);
+    box-shadow: 2px 0 5px #cecece6f;
+    width: 30vw;
+    height: calc(100vh - 4rem);
+    background: #FAF8FC;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-right: 1px solid #cecece;
+}

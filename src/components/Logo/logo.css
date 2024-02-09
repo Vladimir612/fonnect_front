@@ -1,0 +1,7 @@
+.logo{
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,7 @@
+.chat{
+    width: 70vw;
+    height: calc(100vh - 4rem);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
