@@ -1,11 +1,29 @@
 .navigation{
     background: var(--white);
     box-shadow: 2px 0 5px #cecece6f;
-    width: 30vw;
+    width: 25vw;
+    min-width: 16rem;
     height: calc(100vh - 4rem);
     background: #FAF8FC;
     position: absolute;
     left: 0;
     bottom: 0;
     border-right: 1px solid #cecece;
+    .tabs{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        .tab{
+            padding: 1rem 0;
+            border-top: 1px solid #cecece;
+            width: 100%;
+            cursor: pointer;
+        }
+        .tab.active{
+            background: var(--dark);
+            color: var(--white);
+        }
+    }
 }

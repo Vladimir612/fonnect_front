@@ -5,16 +5,16 @@
     padding-left: 1rem;
     cursor: pointer;
     position: relative;
-    .initials{
-        width: 2.4rem;
-        height: 2.4rem;
-        padding: 0.2rem;
-        font-size: 0.9rem;
-        border-radius: 50%;
-        box-shadow: 2px 2px 5px #cecece;
-        font-weight: 600;
-        color: var(--white);
-    }
+}
+.initials{
+    width: 2.4rem;
+    height: 2.4rem;
+    padding: 0.2rem;
+    font-size: 0.9rem;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px #cecece;
+    font-weight: 600;
+    color: var(--white);
 }
 
 .contact .fullname{

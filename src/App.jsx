@@ -5,11 +5,13 @@ import { Routes, Route } from "react-router-dom";
 import Login from "./components/Login/Login";
 import Logo from "./components/Logo/Logo";
 import Messanger from "./components/Messanger/Messanger";
+import MainScreen from "./components/MainScreen/MainScreen";
 
 const App = () => {
   return (
     <div className="app-wrapper flex flex-center">
       <Routes>
+        <Route path="/" element={<MainScreen />} />
         <Route
           path="/register"
           element={

@@ -1,0 +1,28 @@
+.message .initials{
+    box-shadow: none;
+}
+
+.message{
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.message .text{
+    background: var(--white);
+    padding: 0.8rem 1.2rem;
+    border-radius: 1rem;
+    border-bottom-left-radius: 0;
+    max-width: 40vw;
+}
+
+.message.from-me{
+    align-self: flex-end;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    .text{
+        background: var(--dark);
+        color: var(--white);
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 1rem;
+    }
+}

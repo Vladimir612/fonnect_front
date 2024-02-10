@@ -11,7 +11,7 @@ const Navigate = ({ route, children, customStyle, active }) => {
   return (
     <button
       onClick={() => handleNewPage(route)}
-      customstyle={customStyle}
+      style={customStyle}
       className={active ? "active" : ""}
     >
       {children}
