@@ -10,4 +10,15 @@
     .contact{
         cursor: default;
     }
+    .logout-btn{
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        background: var(--profile-fourth);
+        border-radius: 1rem;
+        box-shadow: 2px 2px 5px #21212134;
+        color: var(--white);
+        padding: 0.4rem 2rem;
+    }
 }

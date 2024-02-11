@@ -7,6 +7,7 @@ import "./navigation.css";
 import Contact from "./Contact/Contact";
 import Group from "./Group/Group";
 import CreateGroup from "./CreateGroup/CreateGroup";
+import { useNavigate } from "react-router-dom";
 
 const decodeToken = (token) => {
   try {
@@ -21,6 +22,7 @@ const decodeToken = (token) => {
 const ENDPOINT = "http://localhost:5000";
 
 const Navigation = ({ activeChat, setActiveChat }) => {
+  const navigate = useNavigate();
   const { users, setUser, setUsers, setMessages, messages } = useStore();
   const socketRef = useRef();
   const [tab, setTab] = useState(0);
@@ -96,6 +98,8 @@ const Navigation = ({ activeChat, setActiveChat }) => {
         } catch (err) {
           console.error(err.message);
         }
+      } else {
+        navigate("/");
       }
     };
     fetchData();
