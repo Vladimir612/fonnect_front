@@ -9,6 +9,12 @@
     left: 0;
     bottom: 0;
     border-right: 1px solid #cecece;
+    .create-group{
+        background: var(--dark);
+        width: 100%;
+        color: var(--white);
+        padding: 1rem 0;
+    }
     .tabs{
         position: absolute;
         bottom: 0;

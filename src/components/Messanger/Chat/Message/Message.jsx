@@ -5,7 +5,7 @@ import useStore from "../../../../store";
 const Message = ({ sender, message }) => {
   let initials = "";
 
-  const words = sender?.fullname.split(" ");
+  const words = sender?.fullname?.split(" ");
 
   const { user } = useStore();
 
@@ -29,7 +29,7 @@ const Message = ({ sender, message }) => {
       >
         {initials}
       </div>
-      <p className="text">{message.text}</p>
+      <p className="text">{message.content}</p>
     </div>
   );
 };

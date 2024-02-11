@@ -4,15 +4,15 @@ import useStore from "../../../../store";
 
 const Contact = ({ u, activeChat, setActiveChat }) => {
   let initials = "";
-  const words = u.fullname.split(" ");
+  const words = u?.fullname?.split(" ");
 
   const { user } = useStore();
 
-  if (words.length >= 2) {
+  if (words?.length >= 2) {
     initials = `${words[0].charAt(0).toUpperCase()}${words[1]
       .charAt(0)
       .toUpperCase()}`;
-  } else if (words.length === 1) {
+  } else if (words?.length === 1) {
     initials = words[0].charAt(0).toUpperCase();
   }
 

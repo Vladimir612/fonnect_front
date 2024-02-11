@@ -4,7 +4,7 @@ import useStore from "../../../store";
 
 const Header = ({ activeChat }) => {
   let initials = "";
-  const words = activeChat?.fullname.split(" ");
+  const words = activeChat?.fullname?.split(" ");
 
   const { user } = useStore();
 
@@ -18,7 +18,7 @@ const Header = ({ activeChat }) => {
 
   return (
     <div className="header flex flex-center">
-      {activeChat ? (
+      {activeChat && activeChat.fullname ? (
         <div
           className={`contact flex flex-center ${
             activeChat.active ? "active-user" : ""
@@ -35,8 +35,12 @@ const Header = ({ activeChat }) => {
             {user.username === activeChat?.username && "(Me)"}
           </div>
         </div>
+      ) : activeChat && activeChat._id ? (
+        <div className="contact flex flex-center">
+          <div className="fullname">{activeChat.name}</div>
+        </div>
       ) : (
-        "Select a contact which you would like to send a message"
+        "Select a contact or a group"
       )}
     </div>
   );

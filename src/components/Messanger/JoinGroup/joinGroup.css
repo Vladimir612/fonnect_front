@@ -1,0 +1,25 @@
+.join-group-form{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: var(--dark);
+    box-shadow: 2px 2px 5px #1f1f1f5a;
+    button{
+        color: var(--white);
+        background: var(--profile-fourth);
+        padding: 0.5rem 2rem;
+        border-radius: 1rem;
+    }
+    .close{
+        position: absolute;
+        right: 0.5rem;
+        top: 0.5rem;
+        background: var(--white);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
